@@ -1,0 +1,191 @@
+{% load static %}
+<footer 
+id="footer"
+>
+    <ul class="ul_footer row">
+        <li class="foorter_item1 col-md-3 col-sm-6 footer-widget widget_text">
+            <ul class="foorter_item__ul footer-widget-menu">
+                <li class="submenu_item">
+                    <img src="{% static 'img\logo-blanco.png' %}" alt="" id="logoFooter"/>
+                    <ul>
+                        <li>
+                            <p>SERVICIOS INFORMÁTICOS PARTICULARES Y EMPRESAS</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="foorter_item2 col-md-3 col-sm-6 footer-widget widget_text">
+            <ul class="foorter_item__ul footer-widget-menu">
+                <li class="submenu_item">
+                    <h1>Nosotros
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <p>INDAM Es Una Empresa De Servicios Informáticos Que Opera En Toda La Comunidad De Aragón. Con Una Amplia Experiencia, Dando Soluciones De Una Forma Rápida Y Eficaz</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="foorter_item4 col-md-3 col-sm-6 footer-widget widget_text">
+            <ul class="foorter_item__ul footer-widget-menu">
+                <li class="submenu_item">
+                    <h1>menu</h1>
+                    <ul>
+                        <!-- with foreach  wagtail subpages-->
+                        {% for page in site.children %}
+                        <li
+                        id="{{ page.id }}">
+                        <a href="{{ page.url }}">{{ page.title }}
+                            <!-- if subpages -->
+                            {% if page.has_children %}
+                                {% for childpage in page.children %}
+                                    
+                                    <ul>
+                                        <li
+                                        id="{{ childpage.id }}">
+                                        <a href="{{ childpage.url }}">{{ childpage.title }}</a>
+                                    </li>
+                                </ul>
+                                {% endfor %}
+                            {% endif %}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="foorter_item3 col-md-3 col-sm-6 footer-widget widget_text">
+            <ul class="foorter_item__ul footer-widget-menu">
+                <li class="submenu_item">
+                    <h1>Contactar
+
+                    </h1>
+                    <ul>
+                        <li>
+                            <p>
+                                <div class="inner-box">
+                                    <div class="media">
+                                        <div class="inner-item">
+                                            <div class="media-left">
+                                                <span class="icon"><i class="fa fa-map-marker"></i></span>
+                                            </div>				
+                                            <div class="media-body">
+                                                <span class="inner-text">Tauste, Zaragoza</span>
+                                            </div>											
+                                        </div>					
+                                    </div>								
+                                    <div class="media">
+                                        <div class="inner-item">
+                                            <div class="media-left">
+                                                <span class="icon"><i class="fa fa-envelope-o"></i></span>
+                                            </div>				
+                                            <div class="media-body">
+                                                <span class="inner-text">dam@indam.es</span>
+                                            </div>											
+                                        </div>					
+                                    </div>								
+                                    <div class="media">
+                                        <div class="inner-item">
+                                            <div class="media-left">
+                                                <span class="icon"><i class="fa fa-phone"></i></span>
+                                            </div>				
+                                            <div class="media-body">
+                                                <span class="inner-text">+34 609 075 592</span>
+                                            </div>											
+                                        </div>					
+                                    </div>											
+                                </div><div class="inner-box">
+                                    <div class="media">
+                                        <div class="inner-item">
+                                            <div class="media-left">
+                                                <span class="icon"><i class="fa fa-map-marker"></i></span>
+                                            </div>				
+                                            <div class="media-body">
+                                                <span class="inner-text">Tauste, Zaragoza</span>
+                                            </div>											
+                                        </div>					
+                                    </div>								
+                                    <div class="media">
+                                        <div class="inner-item">
+                                            <div class="media-left">
+                                                <span class="icon"><i class="fa fa-envelope-o"></i></span>
+                                            </div>				
+                                            <div class="media-body">
+                                                <span class="inner-text">dam@indam.es</span>
+                                            </div>											
+                                        </div>					
+                                    </div>								
+                                    <div class="media">
+                                        <div class="inner-item">
+                                            <div class="media-left">
+                                                <span class="icon"><i class="fa fa-phone"></i></span>
+                                            </div>				
+                                            <div class="media-body">
+                                                <span class="inner-text">+34 609 075 592</span>
+                                            </div>											
+                                        </div>					
+                                    </div>											
+                                </div>
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+
+    <div>
+        <div class="botn_up"></div>
+    
+    </div>
+    <script>var botn_up = document.getElementsByClassName("botn_up");
+
+        // Convert HTMLCollection to array
+        var botn_upArray = Array.from(botn_up);
+        
+        botn_upArray.forEach(function(botn_up_i) {
+            botn_up_i.addEventListener("click", function() {
+                window.scrollTo(0, 0);
+            });
+        
+            // Change parent's display property to "flex"
+            var parent = botn_up_i.parentNode;
+            parent.style.display = "flex";
+            //put button on the right
+            parent.style.justifyContent = "flex-end";
+            // put button on the bottom
+            parent.style.alignItems = "flex-end";
+        });
+        
+    </script>
+</footer>
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Get back to top button
+    var backToTopButton = document.querySelector('.botn_up');
+    
+    // Add event listener to back to top button
+    backToTopButton.addEventListener('click', scrollToTop);
+
+    // Get footer element
+    var footer = document.getElementById('footer');
+    
+    // Style footer for fixed positioning at the bottom
+    footer.style.position = 'fixed';
+    footer.style.bottom = '0';
+    footer.style.left = '0';
+    footer.style.right = '0';
+    footer.style.background = '#072948';
+    footer.style.color = '#fff';
+    footer.style.padding = '10px 0';
+    footer.style.textAlign = 'center';
+
+</script>

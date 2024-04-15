@@ -1,0 +1,102 @@
+
+.header-right-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, .header , header .header-right-div, .header .header-right-div .office-number, .header .header-right-div .office-number ul, .header .header-right-div .office-number ul li { 
+    background-color: blue;
+}/* Header */
+.header {
+    background-color: #3498db; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 0px 0; /* Top and bottom padding of 20 pixels */
+}
+
+/* Container */
+.container {
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Flex layout for the header content */
+.flex {
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Items are evenly distributed with space between */
+    align-items: center; /* Align items vertically in the center */
+}
+
+/* Left part of the header */
+.header-left {
+    width: 50%; /* Occupy 50% of the available space */
+}
+
+/* Right part of the header */
+.header-right {
+    width: 50%; /* Occupy 50% of the available space */
+}
+
+/* Office number */
+.office-number {
+    text-align: right; /* Align text to the right */
+}
+
+/* Styling for the phone number */
+.office-number li {
+    list-style: none; /* Remove bullet points */
+}
+
+/* Styling for icons */
+.icofont-envelope-open, .icofont-map-pins {
+    margin-right: 5px; /* Add some space between icon and text */
+}
+/* Footer */
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #072948;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.ul_footer {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ul_footer li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Back to Top Button */
+.botn_up {
+    display: none; /* Hide button by default */
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+}
+
+.botn_up::after {
+    content: '\25b2'; /* Unicode for up arrow */
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.botn_up:hover {
+    background-color: #0056b3;
+}

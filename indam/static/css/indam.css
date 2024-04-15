@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    max-width: 80%;
+    min-height: 100vh;
+    /* calc(auto/2); */
+    margin: 0 2rem;
+
+    padding: 0 15px;
+    color: #231f20;
+    font-family: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+    line-height: 1.25;
+}

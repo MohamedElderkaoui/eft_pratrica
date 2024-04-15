@@ -1,0 +1,31 @@
+
+
+{% load static %}
+{% load wagtailcore_tags %}
+<!-- load url -->
+<nav class="navbar bg-slate-900">
+    <!-- logo -->
+    <a class="navbar-brand" href="{% slugurl  'home' %}">
+
+        <img
+            src="{% static 'images/DElogo.png' %}"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+        />
+        Indam
+    </a>
+
+
+    <ul class="navbar">
+    <!-- litear las pagiñas slugurl  desde root-->
+    {% for page in pages %}
+    <li class="nav-item">
+        <a class="nav-link" href="{% slugurl  page.slug %}">{{ page.title }}</a>
+    </li>
+    {% endfor %}
+   
+    </ul>
+
+</nav>
