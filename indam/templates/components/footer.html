@@ -1,6 +1,7 @@
 {% load static %}
 <footer 
 id="footer"
+class="footer "
 >
     <ul class="ul_footer row">
         <li class="foorter_item1 col-md-3 col-sm-6 footer-widget widget_text">
@@ -187,5 +188,17 @@ id="footer"
     footer.style.color = '#fff';
     footer.style.padding = '10px 0';
     footer.style.textAlign = 'center';
+// Función para verificar si se ha hecho scroll
+function checkScroll() {
+    var footer = document.getElementById('footer');
+    if (window.pageYOffset > 0) {
+        footer.classList.add('scroll');
+    } else {
+        footer.classList.remove('scroll');
+    }
+}
+
+// Agregar evento de scroll al documento
+window.addEventListener('scroll', checkScroll);
 
 </script>

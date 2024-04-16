@@ -1,7 +1,7 @@
 {% load static wagtailuserbar %}
 
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="" lang="en">
     <head>
         <meta charset="utf-8" />
         <title>
@@ -15,11 +15,11 @@
             {% endblock %}
         </title>
         <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         {# tailwind #}
 
         <link rel="stylesheet" href="{% static 'css/tailwind.css' %}" />
         <link rel="stylesheet" href="{% static 'css/components/header.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/components/footer.css' %}" />
         <link rel="stylesheet" href="{% static 'css/indam.css' %}" />
 
         {# Global stylesheets #}
@@ -27,29 +27,30 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
+
+            <style>
+                html{
+                    scroll-behavior: smooth;
+                }
+                .botn_up{
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    cursor: pointer;
+                }
+            </style>
         {% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %}">
+    <body class="container">
         {% wagtailuserbar %}
 
         {% include 'components/hearder.html' %}
         {% include 'components/navbar.html' %}
-
-        <div class="container">
-          <div class="row">
-              <div class="col-md-8">
-                {% block content %}{% endblock %}
-              </div>
-             
-             {% comment %}
-                 {% include 'components/sidebar.html' %}
-             {% endcomment %}
-                
-          </div>
-        </div>
-
+        
+        {% block content %}{% endblock %}
         {% include 'components/footer.html' %}
+
 
         {# Global javascript #}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>

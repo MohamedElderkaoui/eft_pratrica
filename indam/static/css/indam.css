@@ -2,14 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    min-height: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 body {
-    max-width: 80%;
-    min-height: 100vh;
+    /* max-width: 80%; */
+    /* min-height: 100vh;
     /* calc(auto/2); */
-    margin: 0 2rem;
+    /* margin: 0 2rem; */ 
 
     padding: 0 15px;
     color: #231f20;
     font-family: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
     line-height: 1.25;
+    /* center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.template-homepage{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    background: #f4f4f4;
 }
