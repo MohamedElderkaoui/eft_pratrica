@@ -52,5 +52,17 @@ class HomePage(Page):
         ),
         FieldPanel('body'),
     ]
+
+    # sglulr manager
+    def get_context(self, request):
+        """
+        A method to retrieve the context with respect to the given request.
+        Parameters:
+            request: The request object to retrieve context for.
+        Returns:
+            The context obtained after calling the superclass's get_context method.
+        """
+        context = super().get_context(request)
+        return context
     
     

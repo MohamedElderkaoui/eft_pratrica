@@ -189,16 +189,4 @@ class="footer "
     footer.style.padding = '10px 0';
     footer.style.textAlign = 'center';
 // Función para verificar si se ha hecho scroll
-function checkScroll() {
-    var footer = document.getElementById('footer');
-    if (window.pageYOffset > 0) {
-        footer.classList.add('scroll');
-    } else {
-        footer.classList.remove('scroll');
-    }
-}
-
-// Agregar evento de scroll al documento
-window.addEventListener('scroll', checkScroll);
-
 </script>

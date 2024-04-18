@@ -7,6 +7,8 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 20rem;
 }
 body {
     /* max-width: 80%; */
@@ -22,6 +24,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10em 2rem;
 }
 body.template-homepage{
     min-height: 100vh;
@@ -29,6 +32,5 @@ body.template-homepage{
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin: 0;
     background: #f4f4f4;
 }

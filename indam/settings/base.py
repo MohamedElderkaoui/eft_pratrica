@@ -49,11 +49,10 @@ INSTALLED_APPS = [
     
     
     
-    
     # my apps
     "indam",
     "inicio",
-    "contact",
+    "contacto",
     "servicio",
     "about_us",
     
