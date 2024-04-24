@@ -88,71 +88,7 @@
         "documentation": {}
     },
     {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
         "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -217,14 +153,6 @@
     },
     {
         "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -344,28 +272,10 @@
         "documentation": {}
     },
     {
-        "label": "render",
-        "importPath": "django.shortcuts",
-        "description": "django.shortcuts",
-        "isExtraImport": true,
-        "detail": "django.shortcuts",
-        "documentation": {}
-    },
-    {
-        "label": "django.db.models.deletion",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "django.db.models.deletion",
-        "description": "django.db.models.deletion",
-        "detail": "django.db.models.deletion",
-        "documentation": {}
-    },
-    {
-        "label": "modelcluster.fields",
-        "kind": 6,
-        "isExtraImport": true,
+        "label": "ParentalKey",
         "importPath": "modelcluster.fields",
         "description": "modelcluster.fields",
+        "isExtraImport": true,
         "detail": "modelcluster.fields",
         "documentation": {}
     },
@@ -378,60 +288,51 @@
         "documentation": {}
     },
     {
-        "label": "wagtail.contrib.forms.models",
-        "kind": 6,
+        "label": "ParentalKey",
+        "importPath": "modelcluster.fields",
+        "description": "modelcluster.fields",
         "isExtraImport": true,
-        "importPath": "wagtail.contrib.forms.models",
-        "description": "wagtail.contrib.forms.models",
-        "detail": "wagtail.contrib.forms.models",
+        "detail": "modelcluster.fields",
         "documentation": {}
     },
     {
-        "label": "AbstractEmailForm",
-        "importPath": "wagtail.contrib.forms.models",
-        "description": "wagtail.contrib.forms.models",
+        "label": "ParentalManyToManyField",
+        "importPath": "modelcluster.fields",
+        "description": "modelcluster.fields",
         "isExtraImport": true,
-        "detail": "wagtail.contrib.forms.models",
+        "detail": "modelcluster.fields",
         "documentation": {}
     },
     {
-        "label": "AbstractFormField",
-        "importPath": "wagtail.contrib.forms.models",
-        "description": "wagtail.contrib.forms.models",
+        "label": "FieldPanel",
+        "importPath": "wagtail.admin.panels",
+        "description": "wagtail.admin.panels",
         "isExtraImport": true,
-        "detail": "wagtail.contrib.forms.models",
+        "detail": "wagtail.admin.panels",
         "documentation": {}
     },
     {
-        "label": "forms",
-        "importPath": "django",
-        "description": "django",
+        "label": "FieldRowPanel",
+        "importPath": "wagtail.admin.panels",
+        "description": "wagtail.admin.panels",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "wagtail.admin.panels",
         "documentation": {}
     },
     {
-        "label": "template",
-        "importPath": "django",
-        "description": "django",
+        "label": "InlinePanel",
+        "importPath": "wagtail.admin.panels",
+        "description": "wagtail.admin.panels",
         "isExtraImport": true,
-        "detail": "django",
+        "detail": "wagtail.admin.panels",
         "documentation": {}
     },
     {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
+        "label": "MultiFieldPanel",
+        "importPath": "wagtail.admin.panels",
+        "description": "wagtail.admin.panels",
         "isExtraImport": true,
-        "detail": "django.conf",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
+        "detail": "wagtail.admin.panels",
         "documentation": {}
     },
     {
@@ -612,11 +513,99 @@
         "documentation": {}
     },
     {
+        "label": "RichTextField",
+        "importPath": "wagtail.fields",
+        "description": "wagtail.fields",
+        "isExtraImport": true,
+        "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
         "label": "StreamField",
         "importPath": "wagtail.fields",
         "description": "wagtail.fields",
         "isExtraImport": true,
         "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
+        "label": "StreamField",
+        "importPath": "wagtail.fields",
+        "description": "wagtail.fields",
+        "isExtraImport": true,
+        "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractEmailForm",
+        "importPath": "wagtail.contrib.forms.models",
+        "description": "wagtail.contrib.forms.models",
+        "isExtraImport": true,
+        "detail": "wagtail.contrib.forms.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractFormField",
+        "importPath": "wagtail.contrib.forms.models",
+        "description": "wagtail.contrib.forms.models",
+        "isExtraImport": true,
+        "detail": "wagtail.contrib.forms.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractEmailForm",
+        "importPath": "wagtail.contrib.forms.models",
+        "description": "wagtail.contrib.forms.models",
+        "isExtraImport": true,
+        "detail": "wagtail.contrib.forms.models",
+        "documentation": {}
+    },
+    {
+        "label": "AbstractFormField",
+        "importPath": "wagtail.contrib.forms.models",
+        "description": "wagtail.contrib.forms.models",
+        "isExtraImport": true,
+        "detail": "wagtail.contrib.forms.models",
+        "documentation": {}
+    },
+    {
+        "label": "FormSubmissionsPanel",
+        "importPath": "wagtail.contrib.forms.panels",
+        "description": "wagtail.contrib.forms.panels",
+        "isExtraImport": true,
+        "detail": "wagtail.contrib.forms.panels",
+        "documentation": {}
+    },
+    {
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "template",
+        "importPath": "django",
+        "description": "django",
+        "isExtraImport": true,
+        "detail": "django",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
+        "documentation": {}
+    },
+    {
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
+        "isExtraImport": true,
+        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -697,6 +686,67 @@
         "description": "wagtail.models",
         "isExtraImport": true,
         "detail": "wagtail.models",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "pformat",
+        "importPath": "pprint",
+        "description": "pprint",
+        "isExtraImport": true,
+        "detail": "pprint",
+        "documentation": {}
+    },
+    {
+        "label": "jmespath",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "exceptions",
+        "importPath": "jmespath",
+        "description": "jmespath",
+        "isExtraImport": true,
+        "detail": "jmespath",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
         "documentation": {}
     },
     {
@@ -781,6 +831,56 @@
         "documentation": {}
     },
     {
+        "label": "wagtail.blocks",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wagtail.blocks",
+        "description": "wagtail.blocks",
+        "detail": "wagtail.blocks",
+        "documentation": {}
+    },
+    {
+        "label": "PageChooserBlock",
+        "importPath": "wagtail.blocks",
+        "description": "wagtail.blocks",
+        "isExtraImport": true,
+        "detail": "wagtail.blocks",
+        "documentation": {}
+    },
+    {
+        "label": "wagtail.images.blocks",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wagtail.images.blocks",
+        "description": "wagtail.images.blocks",
+        "detail": "wagtail.images.blocks",
+        "documentation": {}
+    },
+    {
+        "label": "ImageChooserBlock",
+        "importPath": "wagtail.images.blocks",
+        "description": "wagtail.images.blocks",
+        "isExtraImport": true,
+        "detail": "wagtail.images.blocks",
+        "documentation": {}
+    },
+    {
+        "label": "ImageChooserBlock",
+        "importPath": "wagtail.images.blocks",
+        "description": "wagtail.images.blocks",
+        "isExtraImport": true,
+        "detail": "wagtail.images.blocks",
+        "documentation": {}
+    },
+    {
+        "label": "ClusterTaggableManager",
+        "importPath": "modelcluster.contrib.taggit",
+        "description": "modelcluster.contrib.taggit",
+        "isExtraImport": true,
+        "detail": "modelcluster.contrib.taggit",
+        "documentation": {}
+    },
+    {
         "label": "EmptyPage",
         "importPath": "django.core.paginator",
         "description": "django.core.paginator",
@@ -813,23 +913,6 @@
         "documentation": {}
     },
     {
-        "label": "wagtail.blocks",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "wagtail.blocks",
-        "description": "wagtail.blocks",
-        "detail": "wagtail.blocks",
-        "documentation": {}
-    },
-    {
-        "label": "ImageChooserBlock",
-        "importPath": "wagtail.images.blocks",
-        "description": "wagtail.images.blocks",
-        "isExtraImport": true,
-        "detail": "wagtail.images.blocks",
-        "documentation": {}
-    },
-    {
         "label": "call_command",
         "importPath": "django.core.management",
         "description": "django.core.management",
@@ -846,15 +929,6 @@
         "documentation": {}
     },
     {
-        "label": "sys",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "sys",
-        "description": "sys",
-        "detail": "sys",
-        "documentation": {}
-    },
-    {
         "label": "AboutUsConfig",
         "kind": 6,
         "importPath": "about_us.apps",
@@ -864,48 +938,57 @@
         "documentation": {}
     },
     {
-        "label": "Migration",
+        "label": "ContactConfig",
         "kind": 6,
-        "importPath": "contacto.migrations.0001_initial",
-        "description": "contacto.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='ContactPage',\n            fields=[\n                ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.page')),",
-        "detail": "contacto.migrations.0001_initial",
+        "importPath": "contact.apps",
+        "description": "contact.apps",
+        "peekOfCode": "class ContactConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'contact'",
+        "detail": "contact.apps",
         "documentation": {}
     },
     {
-        "label": "ContactoConfig",
+        "label": "FormField",
         "kind": 6,
-        "importPath": "contacto.apps",
-        "description": "contacto.apps",
-        "peekOfCode": "class ContactoConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'contacto'",
-        "detail": "contacto.apps",
+        "importPath": "contact.models",
+        "description": "contact.models",
+        "peekOfCode": "class FormField(AbstractFormField):\n    page = ParentalKey('FormPage', on_delete=models.CASCADE, related_name='form_fields')\nclass FormPage(AbstractEmailForm):\n    intro = RichTextField(blank=True)\n    thank_you_text = RichTextField(blank=True)\n    content_panels = AbstractEmailForm.content_panels + [\n        FieldPanel('intro'),\n        InlinePanel('form_fields', label=\"Form fields\"),\n        FieldPanel('thank_you_text'),\n        MultiFieldPanel([",
+        "detail": "contact.models",
         "documentation": {}
     },
     {
-        "label": "ContactPageMapSettings",
+        "label": "FormPage",
         "kind": 6,
-        "importPath": "contacto.models",
-        "description": "contacto.models",
-        "peekOfCode": "class ContactPageMapSettings(models.Model):\n    page = ParentalKey(\n        'ContactPage',\n        on_delete=models.CASCADE,\n        related_name='map_settings',\n    )\n    address_line_1 = models.CharField(max_length=255, blank=True)\n    address_line_2 = models.CharField(max_length=255, blank=True)\n    city = models.CharField(max_length=255, blank=True)\n    state = models.CharField(max_length=255, blank=True)",
-        "detail": "contacto.models",
+        "importPath": "contact.models",
+        "description": "contact.models",
+        "peekOfCode": "class FormPage(AbstractEmailForm):\n    intro = RichTextField(blank=True)\n    thank_you_text = RichTextField(blank=True)\n    content_panels = AbstractEmailForm.content_panels + [\n        FieldPanel('intro'),\n        InlinePanel('form_fields', label=\"Form fields\"),\n        FieldPanel('thank_you_text'),\n        MultiFieldPanel([\n            FieldRowPanel([\n                FieldPanel('from_address', classname=\"col6\"),",
+        "detail": "contact.models",
         "documentation": {}
     },
     {
-        "label": "ContactForm",
+        "label": "FormField",
         "kind": 6,
-        "importPath": "contacto.models",
-        "description": "contacto.models",
-        "peekOfCode": "class ContactForm(AbstractEmailForm):\n    subject = 'Contact message from website'\n    # form fields\n    name = models.CharField(max_length=255, blank=True, verbose_name='Name')\n    email = models.EmailField(max_length=254, verbose_name='Email')\n    message = models.TextField(verbose_name='Message')\n    # display template\n    # template = 'contacto/contact_form.html'\n    content_panels = AbstractEmailForm.content_panels + [\n        FieldPanel('name'),",
-        "detail": "contacto.models",
+        "importPath": "contact.views",
+        "description": "contact.views",
+        "peekOfCode": "class FormField(AbstractFormField):\n    page = ParentalKey(\n        'ContactPage',\n        on_delete=models.CASCADE,\n        related_name='form_fields',\n    )\nclass ContactPage(AbstractEmailForm):\n    template = \"contact/contact_page.html\"\n    # This is the default path.\n    # If ignored, Wagtail adds _landing.html to your template name",
+        "detail": "contact.views",
         "documentation": {}
     },
     {
         "label": "ContactPage",
         "kind": 6,
-        "importPath": "contacto.models",
-        "description": "contacto.models",
-        "peekOfCode": "class ContactPage(AbstractEmailForm):\n    \"\"\"\n    Contact form page\n    \"\"\"\n    template = 'contacto/contact_form.html'\n    heading = models.CharField(max_length=255, blank=True, help_text='Heading above the form')\n    content_panels = AbstractEmailForm.content_panels + [\n        FieldPanel('heading'),\n    ]",
-        "detail": "contacto.models",
+        "importPath": "contact.views",
+        "description": "contact.views",
+        "peekOfCode": "class ContactPage(AbstractEmailForm):\n    template = \"contact/contact_page.html\"\n    # This is the default path.\n    # If ignored, Wagtail adds _landing.html to your template name\n    landing_page_template = \"contact/contact_page_landing.html\"\n    intro = RichTextField(blank=True)\n    thank_you_text = RichTextField(blank=True)\n    content_panels = AbstractEmailForm.content_panels + [\n        FieldPanel('intro'),\n        InlinePanel('form_fields', label='Form Fields'),",
+        "detail": "contact.views",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "env.Scripts.jp",
+        "description": "env.Scripts.jp",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument('expression')\n    parser.add_argument('-f', '--filename',\n                        help=('The filename containing the input data.  '\n                              'If a filename is not given then data is '\n                              'read from stdin.'))\n    parser.add_argument('--ast', action='store_true',\n                        help=('Pretty print the AST, do not search the data.'))\n    args = parser.parse_args()",
+        "detail": "env.Scripts.jp",
         "documentation": {}
     },
     {
@@ -913,53 +996,8 @@
         "kind": 6,
         "importPath": "home.migrations.0001_initial",
         "description": "home.migrations.0001_initial",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        (\"wagtailcore\", \"0040_page_draft_title\"),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name=\"HomePage\",\n            fields=[\n                (\n                    \"page_ptr\",",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n        ('wagtailimages', '0025_alter_image_file_alter_rendition_file'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='HomePage',\n            fields=[",
         "detail": "home.migrations.0001_initial",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "home.migrations.0002_create_homepage",
-        "description": "home.migrations.0002_create_homepage",
-        "peekOfCode": "class Migration(migrations.Migration):\n    run_before = [\n        (\"wagtailcore\", \"0053_locale_model\"),\n    ]\n    dependencies = [\n        (\"home\", \"0001_initial\"),\n    ]\n    operations = [\n        migrations.RunPython(create_homepage, remove_homepage),\n    ]",
-        "detail": "home.migrations.0002_create_homepage",
-        "documentation": {}
-    },
-    {
-        "label": "create_homepage",
-        "kind": 2,
-        "importPath": "home.migrations.0002_create_homepage",
-        "description": "home.migrations.0002_create_homepage",
-        "peekOfCode": "def create_homepage(apps, schema_editor):\n    # Get models\n    ContentType = apps.get_model(\"contenttypes.ContentType\")\n    Page = apps.get_model(\"wagtailcore.Page\")\n    Site = apps.get_model(\"wagtailcore.Site\")\n    HomePage = apps.get_model(\"home.HomePage\")\n    # Delete the default homepage\n    # If migration is run multiple times, it may have already been deleted\n    Page.objects.filter(id=2).delete()\n    # Create content type for homepage model",
-        "detail": "home.migrations.0002_create_homepage",
-        "documentation": {}
-    },
-    {
-        "label": "remove_homepage",
-        "kind": 2,
-        "importPath": "home.migrations.0002_create_homepage",
-        "description": "home.migrations.0002_create_homepage",
-        "peekOfCode": "def remove_homepage(apps, schema_editor):\n    # Get models\n    ContentType = apps.get_model(\"contenttypes.ContentType\")\n    HomePage = apps.get_model(\"home.HomePage\")\n    # Delete the default homepage\n    # Page and Site objects CASCADE\n    HomePage.objects.filter(slug=\"home\", depth=2).delete()\n    # Delete content type for homepage model\n    ContentType.objects.filter(model=\"homepage\", app_label=\"home\").delete()\nclass Migration(migrations.Migration):",
-        "detail": "home.migrations.0002_create_homepage",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "home.migrations.0003_alter_homepage_options_homepage_body_homepage_intro_and_more",
-        "description": "home.migrations.0003_alter_homepage_options_homepage_body_homepage_intro_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('home', '0002_create_homepage'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='homepage',\n            options={'verbose_name': 'home page', 'verbose_name_plural': 'home pages'},\n        ),\n        migrations.AddField(",
-        "detail": "home.migrations.0003_alter_homepage_options_homepage_body_homepage_intro_and_more",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "home.migrations.0004_alter_homepage_options_remove_homepage_intro_and_more",
-        "description": "home.migrations.0004_alter_homepage_options_remove_homepage_intro_and_more",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('home', '0003_alter_homepage_options_homepage_body_homepage_intro_and_more'),\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n        ('wagtailimages', '0025_alter_image_file_alter_rendition_file'),\n    ]\n    operations = [\n        migrations.AlterModelOptions(\n            name='homepage',\n            options={},",
-        "detail": "home.migrations.0004_alter_homepage_options_remove_homepage_intro_and_more",
         "documentation": {}
     },
     {
@@ -1057,7 +1095,7 @@
         "kind": 5,
         "importPath": "indam.settings.base",
         "description": "indam.settings.base",
-        "peekOfCode": "LANGUAGE_CODE = \"en-us\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATICFILES_FINDERS = [\n    \"django.contrib.staticfiles.finders.FileSystemFinder\",\n    \"django.contrib.staticfiles.finders.AppDirectoriesFinder\",\n]",
+        "peekOfCode": "LANGUAGE_CODE = \"es-es\"\nTIME_ZONE = \"UTC\"\nUSE_I18N = True\nUSE_TZ = True\n# Static files (CSS, JavaScript, Images)\n# https://docs.djangoproject.com/en/5.0/howto/static-files/\nSTATICFILES_FINDERS = [\n    \"django.contrib.staticfiles.finders.FileSystemFinder\",\n    \"django.contrib.staticfiles.finders.AppDirectoriesFinder\",\n]",
         "detail": "indam.settings.base",
         "documentation": {}
     },
@@ -1165,7 +1203,7 @@
         "kind": 5,
         "importPath": "indam.settings.base",
         "description": "indam.settings.base",
-        "peekOfCode": "WAGTAILSEARCH_BACKENDS = {\n    \"default\": {\n        \"BACKEND\": \"wagtail.search.backends.database\",\n    }\n}\n# Base URL to use when referring to full URLs within the Wagtail admin backend -\n# e.g. in notification emails. Don't include '/admin' or a trailing slash\nWAGTAILADMIN_BASE_URL = \"http://example.com\"",
+        "peekOfCode": "WAGTAILSEARCH_BACKENDS = {\n    \"default\": {\n        \"BACKEND\": \"wagtail.search.backends.database\",\n    }\n}\n# Base URL to use when referring to full URLs within the Wagtail admin backend -\n# e.g. in notification emails. Don't include '/admin' or a trailing slash\nWAGTAILADMIN_BASE_URL = \"http://example.com\"\nBAKERY_MULTISITE = True\nBUILD_DIR = '/tmp/build/'",
         "detail": "indam.settings.base",
         "documentation": {}
     },
@@ -1174,7 +1212,34 @@
         "kind": 5,
         "importPath": "indam.settings.base",
         "description": "indam.settings.base",
-        "peekOfCode": "WAGTAILADMIN_BASE_URL = \"http://example.com\"",
+        "peekOfCode": "WAGTAILADMIN_BASE_URL = \"http://example.com\"\nBAKERY_MULTISITE = True\nBUILD_DIR = '/tmp/build/'\nBAKERY_VIEWS = (\n\t'wagtailbakery.views.AllPublishedPagesView',\n    'wagtailbakery.views.AllPagesView',\n    'wagtailbakery.api_views.PagesAPIDetailView',\n\t'wagtailbakery.api_views.PagesAPIListingView',\n\t'wagtailbakery.api_views.TypedPagesAPIListingView',\n)",
+        "detail": "indam.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "BAKERY_MULTISITE",
+        "kind": 5,
+        "importPath": "indam.settings.base",
+        "description": "indam.settings.base",
+        "peekOfCode": "BAKERY_MULTISITE = True\nBUILD_DIR = '/tmp/build/'\nBAKERY_VIEWS = (\n\t'wagtailbakery.views.AllPublishedPagesView',\n    'wagtailbakery.views.AllPagesView',\n    'wagtailbakery.api_views.PagesAPIDetailView',\n\t'wagtailbakery.api_views.PagesAPIListingView',\n\t'wagtailbakery.api_views.TypedPagesAPIListingView',\n)",
+        "detail": "indam.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "BUILD_DIR",
+        "kind": 5,
+        "importPath": "indam.settings.base",
+        "description": "indam.settings.base",
+        "peekOfCode": "BUILD_DIR = '/tmp/build/'\nBAKERY_VIEWS = (\n\t'wagtailbakery.views.AllPublishedPagesView',\n    'wagtailbakery.views.AllPagesView',\n    'wagtailbakery.api_views.PagesAPIDetailView',\n\t'wagtailbakery.api_views.PagesAPIListingView',\n\t'wagtailbakery.api_views.TypedPagesAPIListingView',\n)",
+        "detail": "indam.settings.base",
+        "documentation": {}
+    },
+    {
+        "label": "BAKERY_VIEWS",
+        "kind": 5,
+        "importPath": "indam.settings.base",
+        "description": "indam.settings.base",
+        "peekOfCode": "BAKERY_VIEWS = (\n\t'wagtailbakery.views.AllPublishedPagesView',\n    'wagtailbakery.views.AllPagesView',\n    'wagtailbakery.api_views.PagesAPIDetailView',\n\t'wagtailbakery.api_views.PagesAPIListingView',\n\t'wagtailbakery.api_views.TypedPagesAPIListingView',\n)",
         "detail": "indam.settings.base",
         "documentation": {}
     },
@@ -1278,6 +1343,24 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "inicio.migrations.0002_remove_iniciopage_body_and_more",
+        "description": "inicio.migrations.0002_remove_iniciopage_body_and_more",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('inicio', '0001_initial'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='iniciopage',\n            name='body',\n        ),\n        migrations.RemoveField(",
+        "detail": "inicio.migrations.0002_remove_iniciopage_body_and_more",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "inicio.migrations.0003_remove_iniciopage_services_iniciopage_servicios",
+        "description": "inicio.migrations.0003_remove_iniciopage_services_iniciopage_servicios",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('inicio', '0002_remove_iniciopage_body_and_more'),\n    ]\n    operations = [\n        migrations.RemoveField(\n            model_name='iniciopage',\n            name='services',\n        ),\n        migrations.AddField(",
+        "detail": "inicio.migrations.0003_remove_iniciopage_services_iniciopage_servicios",
+        "documentation": {}
+    },
+    {
         "label": "InicioConfig",
         "kind": 6,
         "importPath": "inicio.apps",
@@ -1291,7 +1374,7 @@
         "kind": 6,
         "importPath": "inicio.models",
         "description": "inicio.models",
-        "peekOfCode": "class inicioPage(Page):\n    '''\n    The home page has a carousel of images and a list of services.\n    '''\n    imagenCarousel = models.ForeignKey(\n        \"wagtailimages.Image\",\n        null=True,\n        blank=True,\n        on_delete=models.SET_NULL,\n        related_name=\"+\",",
+        "peekOfCode": "class inicioPage(Page):\n    carouselImages =     StreamField([('carouselImage', ImageChooserBlock())], blank=True, use_json_field=True)\n    servicios = StreamField([('servicio', PageChooserBlock(target_model='servicio.servicio'))], blank=True, use_json_field=True)\n    content_panels = Page.content_panels + [\n        MultiFieldPanel([\n            FieldPanel('carouselImages'),\n        ], heading=\"Carousel\"),\n        MultiFieldPanel([\n            FieldPanel('servicios'),\n        ], heading=\"Services\"),",
         "detail": "inicio.models",
         "documentation": {}
     },
@@ -1314,33 +1397,6 @@
         "documentation": {}
     },
     {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "servicio.migrations.0002_cardpage",
-        "description": "servicio.migrations.0002_cardpage",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('servicio', '0001_initial'),\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CardPage',\n            fields=[\n                ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.page')),",
-        "detail": "servicio.migrations.0002_cardpage",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "servicio.migrations.0003_subapartados",
-        "description": "servicio.migrations.0003_subapartados",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('servicio', '0002_cardpage'),\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='subapartados',\n            fields=[\n                ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.page')),",
-        "detail": "servicio.migrations.0003_subapartados",
-        "documentation": {}
-    },
-    {
-        "label": "Migration",
-        "kind": 6,
-        "importPath": "servicio.migrations.0004_servicio",
-        "description": "servicio.migrations.0004_servicio",
-        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('servicio', '0003_subapartados'),\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='servicio',\n            fields=[\n                ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.page')),",
-        "detail": "servicio.migrations.0004_servicio",
-        "documentation": {}
-    },
-    {
         "label": "ServicioConfig",
         "kind": 6,
         "importPath": "servicio.apps",
@@ -1359,20 +1415,11 @@
         "documentation": {}
     },
     {
-        "label": "CardPage",
-        "kind": 6,
-        "importPath": "servicio.models",
-        "description": "servicio.models",
-        "peekOfCode": "class CardPage(Page):\n    \"\"\"\n    A Page that features a single card.\n    \"\"\"\n    card_page = models.ForeignKey(\n        'servicio.Card',\n        on_delete=models.PROTECT,\n        related_name='+',\n        help_text='The card to display on this page.',\n    )",
-        "detail": "servicio.models",
-        "documentation": {}
-    },
-    {
         "label": "subapartados",
         "kind": 6,
         "importPath": "servicio.models",
         "description": "servicio.models",
-        "peekOfCode": "class subapartados(Page):\n    tittle = models.CharField(max_length=100)\n    cardlist = StreamField([('card', blocks.PageChooserBlock(target_model='servicio.CardPage'))], blank=True)\n#    template\n    template='servicio/subapartados.html'\n    panels = [\n        FieldPanel('tittle'),\n        FieldPanel('cardlist'),\n    ]\n    def __str__(self):",
+        "peekOfCode": "class subapartados(Page):\n    tittle = models.CharField(max_length=100)\n    cardlist = StreamField([('card', blocks.PageChooserBlock(target_model='servicio.Card'))], blank=True, use_json_field=True)\n#    template\n    template='servicio/subapartados.html'\n    panels = [\n        FieldPanel('tittle'),\n        FieldPanel('cardlist'),\n    ]\n    def __str__(self):",
         "detail": "servicio.models",
         "documentation": {}
     },
@@ -1381,7 +1428,7 @@
         "kind": 6,
         "importPath": "servicio.models",
         "description": "servicio.models",
-        "peekOfCode": "class servicio(Page):\n    tittle = models.CharField(max_length=100)\n    subapartadoslist = StreamField([('subapartados', blocks.PageChooserBlock(target_model='servicio.subapartados'))], blank=True)\n    template = 'servicio/servicio.html'\n    content_panels = Page.content_panels + [\n        FieldPanel('tittle'),\n        FieldPanel('subapartadoslist'),\n    ]\n    def __str__(self):\n        return self.tittle",
+        "peekOfCode": "class servicio(Page):\n    tittle = models.CharField(max_length=100)\n    body=RichTextField()\n    subapartadoslist = StreamField([('subapartados', blocks.PageChooserBlock(target_model='servicio.subapartados'))], blank=True, use_json_field=True)\n    template = 'servicio/servicio.html'\n    content_panels = Page.content_panels + [\n        FieldPanel('tittle'),\n        FieldPanel('body'),\n        FieldPanel('subapartadoslist'),\n    ]",
         "detail": "servicio.models",
         "documentation": {}
     },
