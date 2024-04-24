@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Your content goes here -->
+                <!-- Example: Carousel -->
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        {% for item in page.carouselImages %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                                <img src="{{ item.carouselImage.url }}" class="d-block w-100" alt="...">
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Example: Services -->
+                <div class="services">
+                    {% for servicio in page.services %}
+
+                        <div class="card mt-3">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ servicio.tittle }}</h5>
+                                <p class="card-text">
+                                    <div class="rich-text">
+                                        {{ servicio.body  |richtext }}  
+                                    </div>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                        
+                    {% endfor %}
+                </div>
+            </div>
+
+            <!-- Example: Sidebar -->
+            <div class="col-md-4">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    {# Include Bootstrap 5 JavaScript #}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+{% endblock %}

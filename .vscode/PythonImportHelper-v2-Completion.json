@@ -72,67 +72,11 @@
         "documentation": {}
     },
     {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
+        "label": "apps",
+        "importPath": "django.apps",
+        "description": "django.apps",
         "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "models",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
-        "documentation": {}
-    },
-    {
-        "label": "migrations",
-        "importPath": "django.db",
-        "description": "django.db",
-        "isExtraImport": true,
-        "detail": "django.db",
+        "detail": "django.apps",
         "documentation": {}
     },
     {
@@ -184,6 +128,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -193,6 +153,110 @@
     },
     {
         "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
         "importPath": "django.db",
         "description": "django.db",
         "isExtraImport": true,
@@ -339,60 +403,35 @@
         "documentation": {}
     },
     {
-        "label": "wagtail.fields",
-        "kind": 6,
+        "label": "forms",
+        "importPath": "django",
+        "description": "django",
         "isExtraImport": true,
-        "importPath": "wagtail.fields",
-        "description": "wagtail.fields",
-        "detail": "wagtail.fields",
+        "detail": "django",
         "documentation": {}
     },
     {
-        "label": "RichTextField",
-        "importPath": "wagtail.fields",
-        "description": "wagtail.fields",
+        "label": "template",
+        "importPath": "django",
+        "description": "django",
         "isExtraImport": true,
-        "detail": "wagtail.fields",
+        "detail": "django",
         "documentation": {}
     },
     {
-        "label": "RichTextField",
-        "importPath": "wagtail.fields",
-        "description": "wagtail.fields",
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
         "isExtraImport": true,
-        "detail": "wagtail.fields",
+        "detail": "django.conf",
         "documentation": {}
     },
     {
-        "label": "RichTextField",
-        "importPath": "wagtail.fields",
-        "description": "wagtail.fields",
+        "label": "settings",
+        "importPath": "django.conf",
+        "description": "django.conf",
         "isExtraImport": true,
-        "detail": "wagtail.fields",
-        "documentation": {}
-    },
-    {
-        "label": "RichTextField",
-        "importPath": "wagtail.fields",
-        "description": "wagtail.fields",
-        "isExtraImport": true,
-        "detail": "wagtail.fields",
-        "documentation": {}
-    },
-    {
-        "label": "StreamField",
-        "importPath": "wagtail.fields",
-        "description": "wagtail.fields",
-        "isExtraImport": true,
-        "detail": "wagtail.fields",
-        "documentation": {}
-    },
-    {
-        "label": "StreamField",
-        "importPath": "wagtail.fields",
-        "description": "wagtail.fields",
-        "isExtraImport": true,
-        "detail": "wagtail.fields",
+        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -524,6 +563,71 @@
         "documentation": {}
     },
     {
+        "label": "wagtail.fields",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "wagtail.fields",
+        "description": "wagtail.fields",
+        "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
+        "label": "RichTextField",
+        "importPath": "wagtail.fields",
+        "description": "wagtail.fields",
+        "isExtraImport": true,
+        "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
+        "label": "RichTextField",
+        "importPath": "wagtail.fields",
+        "description": "wagtail.fields",
+        "isExtraImport": true,
+        "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
+        "label": "RichTextField",
+        "importPath": "wagtail.fields",
+        "description": "wagtail.fields",
+        "isExtraImport": true,
+        "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
+        "label": "RichTextField",
+        "importPath": "wagtail.fields",
+        "description": "wagtail.fields",
+        "isExtraImport": true,
+        "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
+        "label": "StreamField",
+        "importPath": "wagtail.fields",
+        "description": "wagtail.fields",
+        "isExtraImport": true,
+        "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
+        "label": "StreamField",
+        "importPath": "wagtail.fields",
+        "description": "wagtail.fields",
+        "isExtraImport": true,
+        "detail": "wagtail.fields",
+        "documentation": {}
+    },
+    {
+        "label": "Page",
+        "importPath": "wagtail.models",
+        "description": "wagtail.models",
+        "isExtraImport": true,
+        "detail": "wagtail.models",
+        "documentation": {}
+    },
+    {
         "label": "Page",
         "importPath": "wagtail.models",
         "description": "wagtail.models",
@@ -605,35 +709,11 @@
         "documentation": {}
     },
     {
-        "label": "ServicioConfig",
-        "importPath": "servicio.apps",
-        "description": "servicio.apps",
-        "isExtraImport": true,
-        "detail": "servicio.apps",
-        "documentation": {}
-    },
-    {
-        "label": "template",
-        "importPath": "django",
-        "description": "django",
-        "isExtraImport": true,
-        "detail": "django",
-        "documentation": {}
-    },
-    {
         "label": "FooterText",
         "importPath": "base.models",
         "description": "base.models",
         "isExtraImport": true,
         "detail": "base.models",
-        "documentation": {}
-    },
-    {
-        "label": "settings",
-        "importPath": "django.conf",
-        "description": "django.conf",
-        "isExtraImport": true,
-        "detail": "django.conf",
         "documentation": {}
     },
     {
@@ -750,6 +830,22 @@
         "documentation": {}
     },
     {
+        "label": "call_command",
+        "importPath": "django.core.management",
+        "description": "django.core.management",
+        "isExtraImport": true,
+        "detail": "django.core.management",
+        "documentation": {}
+    },
+    {
+        "label": "CommandError",
+        "importPath": "django.core.management.base",
+        "description": "django.core.management.base",
+        "isExtraImport": true,
+        "detail": "django.core.management.base",
+        "documentation": {}
+    },
+    {
         "label": "sys",
         "kind": 6,
         "isExtraImport": true,
@@ -786,11 +882,20 @@
         "documentation": {}
     },
     {
-        "label": "FormField",
+        "label": "ContactPageMapSettings",
         "kind": 6,
         "importPath": "contacto.models",
         "description": "contacto.models",
-        "peekOfCode": "class FormField(AbstractFormField):\n    page = ParentalKey(\n        'ContactPage',\n        on_delete=models.CASCADE,\n        related_name='form_fields',\n    )\nclass ContactPage(AbstractEmailForm):\n    template = \"contacto/contacto_page.html\"\n    # This is the default path.\n    # If ignored, Wagtail adds _landing.html to your template name",
+        "peekOfCode": "class ContactPageMapSettings(models.Model):\n    page = ParentalKey(\n        'ContactPage',\n        on_delete=models.CASCADE,\n        related_name='map_settings',\n    )\n    address_line_1 = models.CharField(max_length=255, blank=True)\n    address_line_2 = models.CharField(max_length=255, blank=True)\n    city = models.CharField(max_length=255, blank=True)\n    state = models.CharField(max_length=255, blank=True)",
+        "detail": "contacto.models",
+        "documentation": {}
+    },
+    {
+        "label": "ContactForm",
+        "kind": 6,
+        "importPath": "contacto.models",
+        "description": "contacto.models",
+        "peekOfCode": "class ContactForm(AbstractEmailForm):\n    subject = 'Contact message from website'\n    # form fields\n    name = models.CharField(max_length=255, blank=True, verbose_name='Name')\n    email = models.EmailField(max_length=254, verbose_name='Email')\n    message = models.TextField(verbose_name='Message')\n    # display template\n    # template = 'contacto/contact_form.html'\n    content_panels = AbstractEmailForm.content_panels + [\n        FieldPanel('name'),",
         "detail": "contacto.models",
         "documentation": {}
     },
@@ -799,7 +904,7 @@
         "kind": 6,
         "importPath": "contacto.models",
         "description": "contacto.models",
-        "peekOfCode": "class ContactPage(AbstractEmailForm):\n    template = \"contacto/contacto_page.html\"\n    # This is the default path.\n    # If ignored, Wagtail adds _landing.html to your template name\n    landing_page_template = \"contacto/contacto_page_landing.html\"\n    intro = RichTextField(blank=True)\n    thank_you_text = RichTextField(blank=True)\n    content_panels = AbstractEmailForm.content_panels + [\n        FieldPanel('intro'),\n        InlinePanel('form_fields', label='Form Fields'),",
+        "peekOfCode": "class ContactPage(AbstractEmailForm):\n    \"\"\"\n    Contact form page\n    \"\"\"\n    template = 'contacto/contact_form.html'\n    heading = models.CharField(max_length=255, blank=True, help_text='Heading above the form')\n    content_panels = AbstractEmailForm.content_panels + [\n        FieldPanel('heading'),\n    ]",
         "detail": "contacto.models",
         "documentation": {}
     },
@@ -1209,6 +1314,33 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "servicio.migrations.0002_cardpage",
+        "description": "servicio.migrations.0002_cardpage",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('servicio', '0001_initial'),\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='CardPage',\n            fields=[\n                ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.page')),",
+        "detail": "servicio.migrations.0002_cardpage",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "servicio.migrations.0003_subapartados",
+        "description": "servicio.migrations.0003_subapartados",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('servicio', '0002_cardpage'),\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='subapartados',\n            fields=[\n                ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.page')),",
+        "detail": "servicio.migrations.0003_subapartados",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "servicio.migrations.0004_servicio",
+        "description": "servicio.migrations.0004_servicio",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('servicio', '0003_subapartados'),\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='servicio',\n            fields=[\n                ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.page')),",
+        "detail": "servicio.migrations.0004_servicio",
+        "documentation": {}
+    },
+    {
         "label": "ServicioConfig",
         "kind": 6,
         "importPath": "servicio.apps",
@@ -1227,11 +1359,20 @@
         "documentation": {}
     },
     {
+        "label": "CardPage",
+        "kind": 6,
+        "importPath": "servicio.models",
+        "description": "servicio.models",
+        "peekOfCode": "class CardPage(Page):\n    \"\"\"\n    A Page that features a single card.\n    \"\"\"\n    card_page = models.ForeignKey(\n        'servicio.Card',\n        on_delete=models.PROTECT,\n        related_name='+',\n        help_text='The card to display on this page.',\n    )",
+        "detail": "servicio.models",
+        "documentation": {}
+    },
+    {
         "label": "subapartados",
         "kind": 6,
         "importPath": "servicio.models",
         "description": "servicio.models",
-        "peekOfCode": "class subapartados(Page):\n    \"\"\"\n    subapartados(cardlist) \n    \"\"\"\n    tittle = models.CharField(max_length=100)\n    cardlist = StreamField([('card', blocks.PageChooserBlock(target_model='servicio.Card'))], blank=True)\n#    template\n    template='servicio/subapartados.html'\n    panels = [\n        FieldPanel('tittle'),",
+        "peekOfCode": "class subapartados(Page):\n    tittle = models.CharField(max_length=100)\n    cardlist = StreamField([('card', blocks.PageChooserBlock(target_model='servicio.CardPage'))], blank=True)\n#    template\n    template='servicio/subapartados.html'\n    panels = [\n        FieldPanel('tittle'),\n        FieldPanel('cardlist'),\n    ]\n    def __str__(self):",
         "detail": "servicio.models",
         "documentation": {}
     },
@@ -1240,8 +1381,26 @@
         "kind": 6,
         "importPath": "servicio.models",
         "description": "servicio.models",
-        "peekOfCode": "class servicio(Page):\n    \"\"\"\n    servicio(subapartadoslist) \n    \"\"\"\n    tittle = models.CharField(max_length=100)\n    subapartadoslist = StreamField([('subapartados', blocks.PageChooserBlock(target_model='servicio.subapartados'))], blank=True)\n    template = 'servicio/servicio.html'\n    content_panels = Page.content_panels + [\n        FieldPanel('tittle'),\n        FieldPanel('subapartadoslist'),",
+        "peekOfCode": "class servicio(Page):\n    tittle = models.CharField(max_length=100)\n    subapartadoslist = StreamField([('subapartados', blocks.PageChooserBlock(target_model='servicio.subapartados'))], blank=True)\n    template = 'servicio/servicio.html'\n    content_panels = Page.content_panels + [\n        FieldPanel('tittle'),\n        FieldPanel('subapartadoslist'),\n    ]\n    def __str__(self):\n        return self.tittle",
         "detail": "servicio.models",
+        "documentation": {}
+    },
+    {
+        "label": "output_file",
+        "kind": 5,
+        "importPath": "generate_sql_scripts_001",
+        "description": "generate_sql_scripts_001",
+        "peekOfCode": "output_file = 'todas_las_migraciones.sql'\n# Borrar el archivo existente si ya existe\nif os.path.exists(output_file):\n    os.remove(output_file)\n# Obtener todas las aplicaciones instaladas en el proyecto\nfrom django.apps import apps\napp_configs = apps.get_app_configs()\n# Iterar sobre cada aplicación y obtener las migraciones\nfor app_config in app_configs:\n    app_name = app_config.name",
+        "detail": "generate_sql_scripts_001",
+        "documentation": {}
+    },
+    {
+        "label": "app_configs",
+        "kind": 5,
+        "importPath": "generate_sql_scripts_001",
+        "description": "generate_sql_scripts_001",
+        "peekOfCode": "app_configs = apps.get_app_configs()\n# Iterar sobre cada aplicación y obtener las migraciones\nfor app_config in app_configs:\n    app_name = app_config.name\n    try:\n        # Obtener las migraciones de la aplicación\n        output = call_command('sqlmigrate', app_name, '0001', stdout=True)\n        # Escribir las migraciones en el archivo SQL\n        with open(output_file, 'a') as f:\n            f.write(output)",
+        "detail": "generate_sql_scripts_001",
         "documentation": {}
     }
 ]

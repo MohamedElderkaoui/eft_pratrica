@@ -1,49 +1,28 @@
 from django.db import models
-
 from wagtail.models import Page
 from wagtail.fields import RichTextField
-
+from wagtail.fields import StreamField
+from modelcluster.contrib.taggit import ClusterTaggableManager
+from modelcluster.fields import ParentalManyToManyField#
+# ImageChooserBlock
+from wagtail.images.blocks import ImageChooserBlock
+# PageChooserBlock
+from wagtail.blocks import PageChooserBlock
 # import MultiFieldPanel:
 from wagtail.admin.panels import FieldPanel, MultiFieldPanel
-
+#how to make an image carousel?
 # Create your models here.
 class inicioPage(Page):
-    '''
-    The home page has a carousel of images and a list of services.
-    '''
-    imagenCarousel = models.ForeignKey(
-        "wagtailimages.Image",
-        null=True,
-        blank=True,
-        on_delete=models.SET_NULL,
-        related_name="+",
-        help_text="Imagen de Carousel",
-    )
-    body = RichTextField(blank=True)
-
-    # modify your content_panels:
+    
+    carouselImages =     StreamField([('carouselImage', ImageChooserBlock())], blank=True, use_json_field=True)
+    servicios = StreamField([('servicio', PageChooserBlock(target_model='servicio.servicio'))], blank=True, use_json_field=True)
     content_panels = Page.content_panels + [
-        MultiFieldPanel(
-            [
-                FieldPanel("imagenCarousel"),
-            ],
-            heading="Carousel",
-        ),
-        FieldPanel("body"),
+        MultiFieldPanel([
+            FieldPanel('carouselImages'),
+        ], heading="Carousel"),
+        MultiFieldPanel([
+            FieldPanel('servicios'),
+        ], heading="Services"),
     ]
-    
-    
-    
-    # sglulr manager
-    def get_context(self, request):
-        """
-        A method to retrieve the context with respect to the given request.
-        Parameters:
-            request: The request object to retrieve context for.
-        Returns:
-            The context obtained after calling the superclass's get_context method.
-        """
-        context = super().get_context(request)
-        return context
-    
-    
+    template= "inicio/inicio_page.html"
+

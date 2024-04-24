@@ -12,8 +12,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-from servicio.apps import ServicioConfig
-
 PROJECT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = os.path.dirname(PROJECT_DIR)
 
@@ -37,8 +35,11 @@ INSTALLED_APPS = [
     "wagtail.images",
     "wagtail.search",
     "wagtail.admin",
+    "wagtail.contrib.legacy.richtext",
     "wagtail",
+    
     "modelcluster",
+    
     "taggit",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -46,13 +47,15 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    #    "bakery",
+    # "wagtailbakery",
     
     
     
     # my apps
     "indam",
     "inicio",
-    "contacto",
+    "contact",
     "servicio",
     "about_us",
     
@@ -125,8 +128,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
-
+LANGUAGE_CODE = "es-es"
 TIME_ZONE = "UTC"
 
 USE_I18N = True
@@ -183,3 +185,14 @@ WAGTAILSEARCH_BACKENDS = {
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 WAGTAILADMIN_BASE_URL = "http://example.com"
+BAKERY_MULTISITE = True
+BUILD_DIR = '/tmp/build/'
+
+BAKERY_VIEWS = (
+	'wagtailbakery.views.AllPublishedPagesView',
+    'wagtailbakery.views.AllPagesView',
+    'wagtailbakery.api_views.PagesAPIDetailView',
+	'wagtailbakery.api_views.PagesAPIListingView',
+	'wagtailbakery.api_views.TypedPagesAPIListingView',
+)
+

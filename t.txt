@@ -1,0 +1,70 @@
+
+Type 'manage.py help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[auth]
+    changepassword
+    createsuperuser
+
+[bakery]
+    build
+    buildserver
+    publish
+    unbuild
+    unpublish
+
+[contenttypes]
+    remove_stale_contenttypes
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    optimizemigration
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+
+[images]
+    wagtail_update_image_renditions
+
+[redirects]
+    import_redirects
+
+[search]
+    update_index
+    wagtail_update_index
+
+[sessions]
+    clearsessions
+
+[wagtail]
+    create_log_entries_from_revisions
+    fixtree
+    move_pages
+    publish_scheduled
+    publish_scheduled_pages
+    purge_embeds
+    purge_revisions
+    rebuild_references_index
+    set_url_paths
+    show_references_index
