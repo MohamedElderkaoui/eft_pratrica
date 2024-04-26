@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .about_us_page_body {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        text-align: justify;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+</style>
+    <h1>{{ page.title }}</h1>
+    <div class="about_us_page_body">
+        {{ page.body }}
+    </div>
+    <h2>Our team</h2>
+    <ul>
+        {% for member in page.ourteammember_set.all %}
+            <li>
+                <img src="{% image_url member.image %}" alt="{{ member.name }}" class="img-responsive img-circle">
+                <h3>{{ member.name }}</h3>
+                <p>{{ member.role }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
