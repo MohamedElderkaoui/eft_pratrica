@@ -16,12 +16,6 @@
     </div>
     <h2>Our team</h2>
     <ul>
-        {% for member in page.ourteammember_set.all %}
-            <li>
-                <img src="{% image_url member.image %}" alt="{{ member.name }}" class="img-responsive img-circle">
-                <h3>{{ member.name }}</h3>
-                <p>{{ member.role }}</p>
-            </li>
-        {% endfor %}
+    
     </ul>
 {% endblock %}

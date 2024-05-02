@@ -218,6 +218,22 @@
         "documentation": {}
     },
     {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
         "label": "models",
         "importPath": "django.db",
         "description": "django.db",
@@ -1440,6 +1456,15 @@
         "documentation": {}
     },
     {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "servicio.migrations.0002_serviciolistapage",
+        "description": "servicio.migrations.0002_serviciolistapage",
+        "peekOfCode": "class Migration(migrations.Migration):\n    dependencies = [\n        ('servicio', '0001_initial'),\n        ('wagtailcore', '0091_remove_revision_submitted_for_moderation'),\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='servicioListaPage',\n            fields=[\n                ('page_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='wagtailcore.page')),",
+        "detail": "servicio.migrations.0002_serviciolistapage",
+        "documentation": {}
+    },
+    {
         "label": "ServicioConfig",
         "kind": 6,
         "importPath": "servicio.apps",
@@ -1471,7 +1496,16 @@
         "kind": 6,
         "importPath": "servicio.models",
         "description": "servicio.models",
-        "peekOfCode": "class servicio(Page):\n    tittle = models.CharField(max_length=100)\n    body=RichTextField()\n    subapartadoslist = StreamField([('subapartados', blocks.PageChooserBlock(target_model='servicio.subapartados'))], blank=True, use_json_field=True)\n    template = 'servicio/servicio.html'\n    content_panels = Page.content_panels + [\n        FieldPanel('tittle'),\n        FieldPanel('body'),\n        FieldPanel('subapartadoslist'),\n    ]",
+        "peekOfCode": "class servicio(Page):\n    tittle = models.CharField(max_length=100)\n    body=RichTextField()\n    subapartadoslist = StreamField([('subapartados', blocks.PageChooserBlock(target_model='servicio.subapartados'))], blank=True, use_json_field=True)\n    template = 'servicio/servicio.html'\n    ccontent_panels = Page.content_panels + [\n        FieldPanel('tittle'),\n        FieldPanel('body'),\n        FieldPanel('subapartadoslist'),\n    ]",
+        "detail": "servicio.models",
+        "documentation": {}
+    },
+    {
+        "label": "servicioListaPage",
+        "kind": 6,
+        "importPath": "servicio.models",
+        "description": "servicio.models",
+        "peekOfCode": "class servicioListaPage(Page):\n    tittle = models.CharField(max_length=100)\n    body=RichTextField()\n    servicioList = StreamField(\n        [('servicio', blocks.PageChooserBlock(target_model='servicio.servicio'))],\n        blank=True, \n        use_json_field=True\n    )\n    template = 'servicio/servicioList.html'\n    ccontent_panels = Page.content_panels + [",
         "detail": "servicio.models",
         "documentation": {}
     },

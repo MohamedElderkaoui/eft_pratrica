@@ -195,4 +195,3 @@ BAKERY_VIEWS = (
 	'wagtailbakery.api_views.PagesAPIListingView',
 	'wagtailbakery.api_views.TypedPagesAPIListingView',
 )
-
