@@ -31,11 +31,9 @@ from wagtail import blocks
 from wagtail.admin.panels import FieldPanel
 from wagtail.images.blocks import ImageChooserBlock
 """ class card """
-class Card(Pg):
+class Card(Page):
     tittle=models.CharField(max_length=100)
-    body=RichTextField(
-        
-    )
+    body=RichTextField(blank=True)
     template='cards/card.html'
     panels = [
         FieldPanel('tittle'),
@@ -45,16 +43,7 @@ class Card(Pg):
     def __str__(self):
         return self.tittle
 
-    def get_context(self, request):
-        """
-        A method to retrieve the context with respect to the given request.
-        Parameters:
-            request: The request object to retrieve context for.
-        Returns:
-            The context obtained after calling the superclass's get_context method.
-        """
-        context = super().get_context(request)
-        return context
+
 
 
 """ class subapartados (set of  card) """
@@ -67,7 +56,7 @@ class subapartados(Page):
 #    template
     template='servicio/subapartados.html'
 
-    panels = [
+    content_panels = Page.content_panels +[
         FieldPanel('tittle'),
         FieldPanel('cardlist'),
     ]
@@ -75,16 +64,6 @@ class subapartados(Page):
     def __str__(self):
         return self.tittle
 
-    def get_context(self, request):
-        """
-        A method to retrieve the context with respect to the given request.
-        Parameters:
-            request: The request object to retrieve context for.
-        Returns:
-            The context obtained after calling the superclass's get_context method.
-        """
-        context = super().get_context(request)
-        return context
     
 """
 Class servicio(subapartadoslist) 
@@ -92,25 +71,27 @@ Class servicio(subapartadoslist)
 
 class servicio(Page):
     tittle = models.CharField(max_length=100)
-    body=RichTextField()
+    body=RichTextField(blank=True)
     subapartadoslist = StreamField([('subapartados', blocks.PageChooserBlock(target_model='servicio.subapartados'))], blank=True, use_json_field=True)
     
     template = 'servicio/servicio.html'
     
-    ccontent_panels = Page.content_panels + [
+    content_panels = Page.content_panels + [
         FieldPanel('tittle'),
         
         FieldPanel('body'),
         FieldPanel('subapartadoslist'),
     ]
-
+    content_panels = Page.content_panels + [
+        FieldPanel('body'),
+    ]
     def __str__(self):
         return self.tittle
 
 class servicioListaPage(Page):
     
     tittle = models.CharField(max_length=100)
-    body=RichTextField()
+    body=RichTextField(blank=True)
     servicioList = StreamField(
         [('servicio', blocks.PageChooserBlock(target_model='servicio.servicio'))],
         blank=True, 
@@ -118,7 +99,7 @@ class servicioListaPage(Page):
     )
     template = 'servicio/servicioList.html'
     
-    ccontent_panels = Page.content_panels + [
+    content_panels = Page.content_panels + [
         FieldPanel('tittle'),
         
         FieldPanel('body'),
