@@ -4,6 +4,6 @@
 <div class="shadow-lg rounded-lg bg-white p-4 mb-4">
     <h5 class="card-title mb-0 text-lg font-semibold text-gray-900">{{ self.tittle }}</h5>
     <div class="card-text mt-2 text-gray-700  rich-text">
-        {{ self.body }}
+        {{self.body | richtext }}
     </div>
 </div>

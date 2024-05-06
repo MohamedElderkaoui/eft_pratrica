@@ -49,13 +49,14 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     #    "bakery",
     # "wagtailbakery",
-    
+    'django_dump_load_utf8', 
     
     
     # my apps
     "indam",
     "inicio",
     "contact",
+    "contrato",
     "servicio",
     "about_us",
     
