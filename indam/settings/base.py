@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     #    "bakery",
     # "wagtailbakery",
     'django_dump_load_utf8', 
-    
+    # 'navigationtags',
     
     # my apps
     "indam",

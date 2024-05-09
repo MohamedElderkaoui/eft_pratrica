@@ -1,11 +1,14 @@
 
 
 {% load static %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
 {% load wagtailcore_tags %}
+
 <!-- load url -->
 <nav class="navbar bg-slate-900">
     <!-- logo -->
-    <a class="navbar-brand" href="{% slugurl  'home' %}">
+    <a class="navbar-brand" href="{% slugurl  'inicio' %}">
 
         <img
             src="{% static 'images/DElogo.png' %}"
@@ -17,15 +20,13 @@
         Indam
     </a>
 
-
     <ul class="navbar">
     <!-- litear las pagiñas slugurl  desde root-->
-    {% for page in pages %}
-    <li class="nav-item">
-        <a class="nav-link" href="{% slugurl  page.slug %}">{{ page.title }}</a>
-    </li>
-    {% endfor %}
-   
+        {% for page in pages %}
+            <li class="nav-item">
+                <a class="nav-link" href="{% slugurl  page.slug %}">{{ page.title }}</a>
+            </li>
+        {% endfor %}
     </ul>
 
 </nav>

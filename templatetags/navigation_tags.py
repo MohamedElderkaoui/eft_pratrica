@@ -3,7 +3,7 @@ from django import template
 # import site:
 from wagtail.models import Site
 
-from base.models import FooterText
+# from base.models import FooterText
 
 register = template.Library()
 

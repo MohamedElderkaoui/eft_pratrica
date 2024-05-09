@@ -1,5 +1,5 @@
 {% load static  %}
-
+{% load wagtailuserbar %}
 <!DOCTYPE html>
 <html  lang="en">
     <head>
@@ -35,8 +35,8 @@
     </head>
 <!-- padding 20 em -->
     <body class="{% block body_class %}{% endblock %}">
- 
         {% include 'components/hearder.html' %}
+        {% wagtailuserbar %}
         {% include 'components/navbar.html' %}
 
         <div class="container">

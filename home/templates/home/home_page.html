@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load wagtailcore_tags wagtailimages_tags %}
-
+{% load wagtailcore_tags %}
+{% load static %}
 
 
 {% block content %}
@@ -9,10 +10,14 @@
         {% image page.image fill-480x320 %}
         <p>{{ page.hero_text }}</p>
         {% if page.hero_cta_link %}
-            <a href="{% pageurl page.hero_cta_link %}">
-                {% firstof page.hero_cta page.hero_cta_link.title %}
+        <a href="{% pageurl page.hero_cta_link %}">
+            {% firstof page.hero_cta page.hero_cta_link.title %}
             </a>
         {% endif %}
     </div>
+    .
+    <p class="rich-text">
+                   {{self.body | richtext}}
+               </p>
 
 {% endblock content %}

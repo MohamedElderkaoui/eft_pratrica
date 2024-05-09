@@ -72,7 +72,7 @@ Class servicio(subapartadoslist)
 class servicio(Page):
     tittle = models.CharField(max_length=100)
     body=RichTextField(blank=True)
-    subapartadoslist = StreamField([('subapartados', blocks.PageChooserBlock(target_model='servicio.subapartados'))], blank=True, use_json_field=True)
+    subapartadoslist = StreamField([('subapartados', blocks.PageChooserBlock(target_model='servicio.subapartados'))], blank=True, use_json_field=True, null=True)
     
     template = 'servicio/servicio.html'
     
@@ -82,11 +82,12 @@ class servicio(Page):
         FieldPanel('body'),
         FieldPanel('subapartadoslist'),
     ]
-    content_panels = Page.content_panels + [
-        FieldPanel('body'),
-    ]
+
     def __str__(self):
         return self.tittle
+
+    
+
 
 class servicioListaPage(Page):
     
