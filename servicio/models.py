@@ -64,7 +64,9 @@ class subapartados(Page):
     def __str__(self):
         return self.tittle
 
-    
+    class meta:
+        verbose_name = 'Subapartado'
+        verbose_name_plural = 'Subapartados'
 """
 Class servicio(subapartadoslist) 
 """
@@ -87,6 +89,10 @@ class servicio(Page):
         return self.tittle
 
     
+    class Meta:
+        verbose_name = 'Servicio'
+        verbose_name_plural = 'Servicios'
+
 
 
 class servicioListaPage(Page):
@@ -109,3 +115,8 @@ class servicioListaPage(Page):
 
     def __str__(self): 
         return self.tittle
+    
+    class  meta:
+        verbose_name = 'servicio'
+        verbose_name_plural = 'servicios'
+        

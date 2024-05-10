@@ -32,15 +32,7 @@
                                             <h5 class="card-title">{{ servicio.value.servicio }}</h5>
                                             <p class="card-text">{{ servicio.value.descripcion }}</p>
                                             
-                                            {% if servicio.value.child_pages.all %}
-                                                <ul class="list-group">
-                                                    {% for child in servicio.value.child_pages.all %}
-                                                        <li class="list-group-item"><a href="{{ child.url }}">{{ child.title }}</a></li>
-                                                    {% endfor %}
-                                                </ul>
-                                            {% else %}
-                                                <p>no hay</p>
-                                            {% endif %}
+                                           
                                         </div>
                                     </div>
                                 </div>

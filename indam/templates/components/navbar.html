@@ -5,9 +5,17 @@
 
 {% load wagtailcore_tags %}
 
+
 <!-- load url -->
 <nav class="navbar bg-slate-900">
     <!-- logo -->
+    <style>
+        #Contactarnos{
+            background-color: blue;
+            color: white;
+
+        }
+    </style>
     <a class="navbar-brand" href="{% slugurl  'inicio' %}">
 
         <img
@@ -21,12 +29,57 @@
     </a>
 
     <ul class="navbar">
-    <!-- litear las pagiñas slugurl  desde root-->
-        {% for page in pages %}
-            <li class="nav-item">
-                <a class="nav-link" href="{% slugurl  page.slug %}">{{ page.title }}</a>
+
+        <a 
+        class="nav-item"
+        href="{% slugurl  'nosotros' %}">
+        <li 
+        class="nav-link"
+        >
+        Nosotros
+    </li>
+</a>
+
+<a class="nav-link dropdown-toggle" href="{% slugurl  'servicio' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown">
+              Servicios
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  {% for child_page in servicio.get_children.live %}
+                  <a class="dropdown-item" href="{% pageurl child_page %}">{{ child_page.title }}</a>
+                  {% endfor %}
+                </div>
             </li>
-        {% endfor %}
+        </a>
+<script>
+     var dropdown_menu = document.querySelector(
+         ".dropdown-menu"
+     )
+     
+     var dropdown_menu_button = document.querySelector(
+         '[aria-controls="navbarDropdown"]'
+     )
+     
+     dropdown_menu_button.addEventListener('mouseover', function() {
+         dropdown_menu.classList.toggle('show')
+     })
+     
+     window.addEventListener('mouseover', function(event) {
+         if (!event.target.closest('.dropdown-menu')) {
+             dropdown_menu.classList.remove('show')
+         }
+     })
+     
+</script>
+        <a 
+        id="Contactarnos"
+        class="nav-item"
+        href="{% slugurl  'contactarnos' %}">
+        <li 
+        class="nav-link"
+        >
+        Contactarnos
+    </li>
+</a>
     </ul>
 
 </nav>
