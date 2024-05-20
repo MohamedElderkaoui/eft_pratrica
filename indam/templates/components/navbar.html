@@ -43,11 +43,17 @@
 <a class="nav-link dropdown-toggle" href="{% slugurl  'servicio' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <li class="nav-item dropdown">
               Servicios
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  {% for child_page in servicio.get_children.live %}
-                  <a class="dropdown-item" href="{% pageurl child_page %}">{{ child_page.title }}</a>
-                  {% endfor %}
-                </div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% slugurl 'servicio-informatica' %}">
+              Informatica
+            </a>
+            <a class="dropdown-item" href="{% slugurl 'servicio-energia' %}">
+              Energia
+            </a>
+            <a class="dropdown-item" href="{% slugurl 'servicio-telefonia' %}">
+              Telefonia
+            </a>
+         </div>
             </li>
         </a>
 <script>

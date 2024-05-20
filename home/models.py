@@ -4,7 +4,7 @@ from wagtail.models import Page
 from wagtail.fields import RichTextField
 
 # import MultiFieldPanel:
-from wagtail.admin.panels import FieldPanel, MultiFieldPanel
+from wagtail.admin.panels import FieldPanel, MultiFieldPanel,InlinePanel
 
 
 class HomePage(Page):
@@ -36,7 +36,13 @@ class HomePage(Page):
         verbose_name="Hero CTA link",
         help_text="Choose a page to link to for the Call to Action",
     )
-
+    # imagenes para carrusel en home:
+    carousel_images = models.ManyToManyField(
+        "wagtailimages.Image",
+        related_name="+",
+        blank=True,
+        help_text="Immagini per il carousel in homepage",
+    )
     body = RichTextField(blank=True)
 
     # modify your content_panels:
@@ -47,10 +53,17 @@ class HomePage(Page):
                 FieldPanel("hero_text"),
                 FieldPanel("hero_cta"),
                 FieldPanel("hero_cta_link"),
+                FieldPanel("carousel_images"),
             ],
             heading="Hero section",
         ),
         FieldPanel('body'),
+        MultiFieldPanel(
+            [
+                InlinePanel("carousel_images", label="Carousel images"),
+            ],
+            heading="Carousel images",
+        ),
     ]
 
     # sglulr manager
