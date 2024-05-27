@@ -41,18 +41,26 @@
 </a>
 
 <a class="nav-link dropdown-toggle" href="{% slugurl  'servicio' %}" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <li class="nav-item dropdown">
+               <li class="nav-item dropdown"> 
               Servicios
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{% slugurl 'servicio-informatica' %}">
-              Informatica
-            </a>
-            <a class="dropdown-item" href="{% slugurl 'servicio-energia' %}">
-              Energia
-            </a>
-            <a class="dropdown-item" href="{% slugurl 'servicio-telefonia' %}">
-              Telefonia
-            </a>
+            <ul>
+                <li>
+                  <a class="dropdown-item" href="{% slugurl 'servicio-informatica' %}">
+                    Informatica
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% slugurl 'servicio-energia' %}">
+                    Energia
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="{% slugurl 'servicio-telefonia' %}">
+                    Telefonia
+                  </a>
+                </li>
+            </ul>
          </div>
             </li>
         </a>
@@ -66,7 +74,7 @@
      )
      
      dropdown_menu_button.addEventListener('mouseover', function() {
-         dropdown_menu.classList.toggle('show')
+         dropdown_menu.classList.add('show')
      })
      
      window.addEventListener('mouseover', function(event) {
