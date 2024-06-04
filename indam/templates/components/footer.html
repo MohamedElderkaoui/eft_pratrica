@@ -1,4 +1,10 @@
+
+
 {% load static %}
+{% load wagtailcore_tags wagtailimages_tags %}
+
+{% load wagtailcore_tags %}
+
 <style>
     .footer {
         background-color: #000;
@@ -28,6 +34,12 @@ style="height: 20vh;"
         </div>
         <div class="footer-wedget-three col-12 col-md-3">
             <h2>Menú</h2>
+
+            <ul>
+                <li><a href="{% slugurl  'nosotros' %}">Nosotros</a></li>
+                <li><a href="{% slugurl  'servicio' %}">Servicios</a></li>
+                <li><a href="{% slugurl  'contactarnos' %}">Contacto</a></li>
+            </ul>
         </div>
         <div class="footer-wedget-four col-12 col-md-3">
             <h2>Contactar</h2>
