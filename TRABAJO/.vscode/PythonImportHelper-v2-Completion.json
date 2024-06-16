@@ -1,0 +1,194 @@
+[
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "ZipFile",
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "isExtraImport": true,
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "BadZipFile",
+        "importPath": "zipfile",
+        "description": "zipfile",
+        "isExtraImport": true,
+        "detail": "zipfile",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "date2num",
+        "importPath": "matplotlib.dates",
+        "description": "matplotlib.dates",
+        "isExtraImport": true,
+        "detail": "matplotlib.dates",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "Presentation",
+        "importPath": "pptx",
+        "description": "pptx",
+        "isExtraImport": true,
+        "detail": "pptx",
+        "documentation": {}
+    },
+    {
+        "label": "gTTS",
+        "importPath": "gtts",
+        "description": "gtts",
+        "isExtraImport": true,
+        "detail": "gtts",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "extract_file",
+        "kind": 2,
+        "importPath": "env.Scripts.vba_extract",
+        "description": "env.Scripts.vba_extract",
+        "peekOfCode": "def extract_file(xlsm_zip, filename):\n    # Extract a single file from an Excel xlsm macro file.\n    data = xlsm_zip.read(\"xl/\" + filename)\n    # Write the data to a local file.\n    file = open(filename, \"wb\")\n    file.write(data)\n    file.close()\n# The VBA project file and project signature file we want to extract.\nvba_filename = \"vbaProject.bin\"\nvba_signature_filename = \"vbaProjectSignature.bin\"",
+        "detail": "env.Scripts.vba_extract",
+        "documentation": {}
+    },
+    {
+        "label": "vba_filename",
+        "kind": 5,
+        "importPath": "env.Scripts.vba_extract",
+        "description": "env.Scripts.vba_extract",
+        "peekOfCode": "vba_filename = \"vbaProject.bin\"\nvba_signature_filename = \"vbaProjectSignature.bin\"\n# Get the xlsm file name from the commandline.\nif len(sys.argv) > 1:\n    xlsm_file = sys.argv[1]\nelse:\n    print(\n        \"\\nUtility to extract a vbaProject.bin binary from an Excel 2007+ \"\n        \"xlsm macro file for insertion into an XlsxWriter file.\\n\"\n        \"If the macros are digitally signed, extracts also a vbaProjectSignature.bin \"",
+        "detail": "env.Scripts.vba_extract",
+        "documentation": {}
+    },
+    {
+        "label": "vba_signature_filename",
+        "kind": 5,
+        "importPath": "env.Scripts.vba_extract",
+        "description": "env.Scripts.vba_extract",
+        "peekOfCode": "vba_signature_filename = \"vbaProjectSignature.bin\"\n# Get the xlsm file name from the commandline.\nif len(sys.argv) > 1:\n    xlsm_file = sys.argv[1]\nelse:\n    print(\n        \"\\nUtility to extract a vbaProject.bin binary from an Excel 2007+ \"\n        \"xlsm macro file for insertion into an XlsxWriter file.\\n\"\n        \"If the macros are digitally signed, extracts also a vbaProjectSignature.bin \"\n        \"file.\\n\"",
+        "detail": "env.Scripts.vba_extract",
+        "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "gantt_chart",
+        "description": "gantt_chart",
+        "peekOfCode": "data = {\n    'Tarea': [\n        'Reuniones iniciales', 'Definición de objetivos', 'Configuración de herramientas',\n        'Desarrollo de nuevas funcionalidades', 'Integración de contenido nuevo', 'Pruebas de funcionalidad',\n        'Pruebas de usuario', 'Corrección de errores', 'Preparación para el lanzamiento',\n        'Lanzamiento de la nueva página', 'Monitoreo y mantenimiento inicial'\n    ],\n    'Inicio': [\n        '2024-04-01', '2024-04-08', '2024-04-15', '2024-04-15', '2024-04-29', '2024-04-29',\n        '2024-05-13', '2024-06-03', '2024-06-13', '2024-07-07', '2024-07-15'",
+        "detail": "gantt_chart",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "gantt_chart",
+        "description": "gantt_chart",
+        "peekOfCode": "df = pd.DataFrame(data)\n# Convertir las fechas a objetos datetime\ndf['Inicio'] = pd.to_datetime(df['Inicio'])\ndf['Final'] = pd.to_datetime(df['Final'])\n# Crear la figura y el eje\nfig, ax = plt.subplots(figsize=(10, 6))\n# Añadir las barras al diagrama de Gantt\nfor idx, row in df.iterrows():\n    ax.broken_barh(\n        [(date2num(row['Inicio']), (row['Final'] - row['Inicio']).days)],",
+        "detail": "gantt_chart",
+        "documentation": {}
+    },
+    {
+        "label": "df['Inicio']",
+        "kind": 5,
+        "importPath": "gantt_chart",
+        "description": "gantt_chart",
+        "peekOfCode": "df['Inicio'] = pd.to_datetime(df['Inicio'])\ndf['Final'] = pd.to_datetime(df['Final'])\n# Crear la figura y el eje\nfig, ax = plt.subplots(figsize=(10, 6))\n# Añadir las barras al diagrama de Gantt\nfor idx, row in df.iterrows():\n    ax.broken_barh(\n        [(date2num(row['Inicio']), (row['Final'] - row['Inicio']).days)],\n        (idx - 0.4, 0.8),\n        facecolors=('tab:blue')",
+        "detail": "gantt_chart",
+        "documentation": {}
+    },
+    {
+        "label": "df['Final']",
+        "kind": 5,
+        "importPath": "gantt_chart",
+        "description": "gantt_chart",
+        "peekOfCode": "df['Final'] = pd.to_datetime(df['Final'])\n# Crear la figura y el eje\nfig, ax = plt.subplots(figsize=(10, 6))\n# Añadir las barras al diagrama de Gantt\nfor idx, row in df.iterrows():\n    ax.broken_barh(\n        [(date2num(row['Inicio']), (row['Final'] - row['Inicio']).days)],\n        (idx - 0.4, 0.8),\n        facecolors=('tab:blue')\n    )",
+        "detail": "gantt_chart",
+        "documentation": {}
+    },
+    {
+        "label": "audio_dir",
+        "kind": 5,
+        "importPath": "P",
+        "description": "P",
+        "peekOfCode": "audio_dir = 'audio'\nos.makedirs(audio_dir, exist_ok=True)\n# Cargar la presentación de PowerPoint\nppt_path = 'Proyecto_Web_DAM.pptx'  # Cambia esto por la ruta de tu archivo\nprs = Presentation(ppt_path)\n# Texto para cada diapositiva\nnarrations = [\n    \"Hola, mi nombre es Mohamed ElDerkaoui Merzouk Bedoukha y esta es la presentación de mi proyecto sobre la mejora y ampliación de la página web de DAM Servicios Informáticos utilizando Wagtail CMS. Este proyecto se lleva a cabo desde el 1 de abril de 2024 hasta el 15 de junio de 2024.\",\n    \"El objetivo principal de este proyecto es mejorar y ampliar la página web de DAM Servicios Informáticos utilizando Wagtail CMS, con el fin de proporcionar una experiencia en línea más completa y satisfactoria para nuestros clientes. Los objetivos específicos incluyen: Incorporar nuevos servicios, mejorar la usabilidad y actualizar el contenido.\",\n    \"El alcance del proyecto incluye el diseño y desarrollo de nuevas páginas web, integración de herramientas interactivas, optimización del contenido existente y mejora de la navegación y usabilidad.\",",
+        "detail": "P",
+        "documentation": {}
+    },
+    {
+        "label": "ppt_path",
+        "kind": 5,
+        "importPath": "P",
+        "description": "P",
+        "peekOfCode": "ppt_path = 'Proyecto_Web_DAM.pptx'  # Cambia esto por la ruta de tu archivo\nprs = Presentation(ppt_path)\n# Texto para cada diapositiva\nnarrations = [\n    \"Hola, mi nombre es Mohamed ElDerkaoui Merzouk Bedoukha y esta es la presentación de mi proyecto sobre la mejora y ampliación de la página web de DAM Servicios Informáticos utilizando Wagtail CMS. Este proyecto se lleva a cabo desde el 1 de abril de 2024 hasta el 15 de junio de 2024.\",\n    \"El objetivo principal de este proyecto es mejorar y ampliar la página web de DAM Servicios Informáticos utilizando Wagtail CMS, con el fin de proporcionar una experiencia en línea más completa y satisfactoria para nuestros clientes. Los objetivos específicos incluyen: Incorporar nuevos servicios, mejorar la usabilidad y actualizar el contenido.\",\n    \"El alcance del proyecto incluye el diseño y desarrollo de nuevas páginas web, integración de herramientas interactivas, optimización del contenido existente y mejora de la navegación y usabilidad.\",\n    \"Durante la fase de planificación de este proyecto, se llevaron a cabo análisis exhaustivos de diversas soluciones y alternativas para mejorar la página web de DAM Servicios Informáticos. Tras analizar las características, la flexibilidad y la escalabilidad de cada plataforma, se determinó que Wagtail CMS era la opción más adecuada.\",\n    \"La planificación del proyecto se divide en varias fases: Análisis y requisitos (Semanas 1-2), Diseño (Semana 3), Desarrollo (Semanas 4-8), Pruebas (Semanas 9-10), Lanzamiento (Semana 11) y Post-lanzamiento (Monitoreo y mantenimiento inicial).\",\n    \"El presupuesto estimado del proyecto incluye costos de diseño web, desarrollo web, alojamiento web y gastos generales, sumando un total de 7115.64 euros.\",",
+        "detail": "P",
+        "documentation": {}
+    },
+    {
+        "label": "prs",
+        "kind": 5,
+        "importPath": "P",
+        "description": "P",
+        "peekOfCode": "prs = Presentation(ppt_path)\n# Texto para cada diapositiva\nnarrations = [\n    \"Hola, mi nombre es Mohamed ElDerkaoui Merzouk Bedoukha y esta es la presentación de mi proyecto sobre la mejora y ampliación de la página web de DAM Servicios Informáticos utilizando Wagtail CMS. Este proyecto se lleva a cabo desde el 1 de abril de 2024 hasta el 15 de junio de 2024.\",\n    \"El objetivo principal de este proyecto es mejorar y ampliar la página web de DAM Servicios Informáticos utilizando Wagtail CMS, con el fin de proporcionar una experiencia en línea más completa y satisfactoria para nuestros clientes. Los objetivos específicos incluyen: Incorporar nuevos servicios, mejorar la usabilidad y actualizar el contenido.\",\n    \"El alcance del proyecto incluye el diseño y desarrollo de nuevas páginas web, integración de herramientas interactivas, optimización del contenido existente y mejora de la navegación y usabilidad.\",\n    \"Durante la fase de planificación de este proyecto, se llevaron a cabo análisis exhaustivos de diversas soluciones y alternativas para mejorar la página web de DAM Servicios Informáticos. Tras analizar las características, la flexibilidad y la escalabilidad de cada plataforma, se determinó que Wagtail CMS era la opción más adecuada.\",\n    \"La planificación del proyecto se divide en varias fases: Análisis y requisitos (Semanas 1-2), Diseño (Semana 3), Desarrollo (Semanas 4-8), Pruebas (Semanas 9-10), Lanzamiento (Semana 11) y Post-lanzamiento (Monitoreo y mantenimiento inicial).\",\n    \"El presupuesto estimado del proyecto incluye costos de diseño web, desarrollo web, alojamiento web y gastos generales, sumando un total de 7115.64 euros.\",\n    \"Las áreas de gestión del proyecto incluyen gestión del alcance, gestión del tiempo, gestión del costo, gestión de la calidad, gestión de los recursos humanos, gestión de las comunicaciones y gestión de los riesgos.\",",
+        "detail": "P",
+        "documentation": {}
+    },
+    {
+        "label": "narrations",
+        "kind": 5,
+        "importPath": "P",
+        "description": "P",
+        "peekOfCode": "narrations = [\n    \"Hola, mi nombre es Mohamed ElDerkaoui Merzouk Bedoukha y esta es la presentación de mi proyecto sobre la mejora y ampliación de la página web de DAM Servicios Informáticos utilizando Wagtail CMS. Este proyecto se lleva a cabo desde el 1 de abril de 2024 hasta el 15 de junio de 2024.\",\n    \"El objetivo principal de este proyecto es mejorar y ampliar la página web de DAM Servicios Informáticos utilizando Wagtail CMS, con el fin de proporcionar una experiencia en línea más completa y satisfactoria para nuestros clientes. Los objetivos específicos incluyen: Incorporar nuevos servicios, mejorar la usabilidad y actualizar el contenido.\",\n    \"El alcance del proyecto incluye el diseño y desarrollo de nuevas páginas web, integración de herramientas interactivas, optimización del contenido existente y mejora de la navegación y usabilidad.\",\n    \"Durante la fase de planificación de este proyecto, se llevaron a cabo análisis exhaustivos de diversas soluciones y alternativas para mejorar la página web de DAM Servicios Informáticos. Tras analizar las características, la flexibilidad y la escalabilidad de cada plataforma, se determinó que Wagtail CMS era la opción más adecuada.\",\n    \"La planificación del proyecto se divide en varias fases: Análisis y requisitos (Semanas 1-2), Diseño (Semana 3), Desarrollo (Semanas 4-8), Pruebas (Semanas 9-10), Lanzamiento (Semana 11) y Post-lanzamiento (Monitoreo y mantenimiento inicial).\",\n    \"El presupuesto estimado del proyecto incluye costos de diseño web, desarrollo web, alojamiento web y gastos generales, sumando un total de 7115.64 euros.\",\n    \"Las áreas de gestión del proyecto incluyen gestión del alcance, gestión del tiempo, gestión del costo, gestión de la calidad, gestión de los recursos humanos, gestión de las comunicaciones y gestión de los riesgos.\",\n    \"La aplicación de módulos incluye el desarrollo web con HTML5, CSS3 y JavaScript, desarrollo backend con Python y Django, gestión de bases de datos con PostgreSQL, y diseño y usabilidad aplicando principios de diseño para mejorar la experiencia del usuario.\",\n    \"Referencias web utilizadas incluyen la documentación de Wagtail CMS y recursos educativos como lmorillas.github.io y wagtail.org.\",",
+        "detail": "P",
+        "documentation": {}
+    },
+    {
+        "label": "output_path",
+        "kind": 5,
+        "importPath": "P",
+        "description": "P",
+        "peekOfCode": "output_path = '/mnt/data/Modified_Proyecto_Web_DAM.pptx'  # Cambia esto por la ruta de salida\nprs.save(output_path)\nprint(f\"Presentación guardada en {output_path}\")",
+        "detail": "P",
+        "documentation": {}
+    }
+]

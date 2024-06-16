@@ -2,94 +2,140 @@
 {% load wagtailcore_tags wagtailimages_tags %}
 {% load wagtailcore_tags %}
 {% load static %}
+{% load media %}
 {% block extra_css %}
 {# Override this in templates to add extra stylesheets #}
 <style>
-    .carousel {
-        margin-top: 20px;
-    }
-    .owl-carousel {
-        margin: 0 auto;
-        width: 70vw;
-    }
-    .owl-carousel img {
-        height: 300px;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-    @media (max-width: 768px) {
-        .carousel {
-            width: 90vw;
-        }
-    }
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .hero-cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .hero-cta:hover {
+    background-color: #0056b3;
+}
+
+/* Carousel Section */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    background-color: #f4f4f4;
+}
+
+.carousel .carousel-image {
+    flex: 0 0 auto;
+    margin: 0 10px;
+}
+
+.carousel .carousel-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Body Content */
+.content {
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
 </style>
-{% endblock %}
+{% endblock %}  
 
 {% block content %}
-    <div>
-        <h1>{{ page.title }}</h1>
-        {% if page.carousel_images %}
-            <div class="carousel owl-carousel owl-theme">
-                {% for image in page.carousel_images.all %}
-                    <a href="#"><img src="{{ image.get_rendition('fill-700x300').img_tag }}" alt="{{ image.caption }}"/></a>
-                {% endfor %}
+      <section class="hero">
+        {% if page.image %}
+            <img src="{{ page.image.url }}" alt="Hero Image">
+        {% endif %}
+        <div class="hero-text">
+            <h1>{{ page.hero_text }}</h1>
+            {% if page.hero_cta_link %}
+                <a href="{{ page.hero_cta_link.url }}" class="hero-cta">{{ page.hero_cta }}</a>
+            {% endif %}
+        </div>
+    </section>
+    
+    <!-- Carousel Section -->
+    <section class="carousel">
+        {% for image in page.carousel_images.all %}
+            <div class="carousel-image">
+                <img src="{{ image.carouselImage.url }}" alt="Carousel Image">
             </div>
-        
-        {% endif %}
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel/2.3.4/owl.carousel.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $('.carousel').owlCarousel({
-                    autoplay: true,
-                    autoplayTimeout: 2000,
-                    loop: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        600: {
-                            items: 3
-                        },
-                        1000: {
-                            items: 5
-                        }
-                    }
-                });
-            });
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const carrousel = document.querySelector('.carousel');
-                if (carrousel) {
-                    carrousel.addEventListener('click', function(e) {
-                        e.preventDefault();
-                        const target = e.target;
-                        if (target.tagName === 'IMG') {
-                            const src = target.src;
-                            const alt = target.alt;
-                            const img = document.createElement('img');
-                            img.src = src;
-                            img.alt = alt;
-                            document.body.appendChild(img);
-                        }
-                    });
-                }
-            });
+        {% endfor %}
+    </section>
+    
+    <!-- Body Content -->
+    <section class="content">
+        {{ page.body|richtext }}
+    </section>
+<script>
+    // Smooth scroll for carousel
+document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.querySelector('.carousel');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
 
+    carousel.addEventListener('mousedown', (e) => {
+        isDown = true;
+        carousel.classList.add('active');
+        startX = e.pageX - carousel.offsetLeft;
+        scrollLeft = carousel.scrollLeft;
+    });
 
+    carousel.addEventListener('mouseleave', () => {
+        isDown = false;
+        carousel.classList.remove('active');
+    });
 
-        </script>
-        {% image page.image fill-480x320 %}
-        <p>{{ page.hero_text }}</p>
-        {% if page.hero_cta_link %}
-        <a href="{% pageurl page.hero_cta_link %}">
-            {% firstof page.hero_cta page.hero_cta_link.title %}
-            </a>
-        {% endif %}
-    </div>
-    .
-    <p class="rich-text">
-                   {{self.body | richtext}}
-               </p>
+    carousel.addEventListener('mouseup', () => {
+        isDown = false;
+        carousel.classList.remove('active');
+    });
 
+    carousel.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - carousel.offsetLeft;
+        const walk = (x - startX) * 3; //scroll-fast
+        carousel.scrollLeft = scrollLeft - walk;
+    });
+});
+
+</script>
 {% endblock content %}
